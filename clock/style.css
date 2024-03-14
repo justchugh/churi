@@ -1,0 +1,40 @@
+@font-face {
+  font-family: 'pixeled';
+  src: url('pixeled.ttf');
+  color: white;
+}
+
+html {
+  font-family: 'pixeled';
+  color: white;
+}
+
+body {
+  height: 40vh;
+  margin: 0;
+  padding: 0 1rem;
+}
+
+footer {
+  font-size: .8em;
+  margin: .1em 9;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.time {
+  font-size: 1.5em;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}

@@ -1,0 +1,218 @@
+/* Basic reset for styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: white;
+    /* background-color: #ffe0e9; */
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Navigation bar styling */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+nav ul li {
+    padding: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #d10056;
+}
+
+
+
+section {
+    display: none; /* Keep sections hidden by default */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    /* Removed the background-color and box-shadow here to accommodate background images */
+}
+
+section.active {
+    display: flex; /* Display the active section with flex layout */
+}
+
+.section-content {
+    max-width: 600px; /* Adjust based on your preference */
+    margin: auto; /* Centers the .section-content div */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    color: #fff; /* White text color */
+    padding: 40px; /* Increase padding for better readability */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    text-align: justify; /* Justifies the text */
+    text-justify: inter-word; /* Improves spacing between words */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* To ensure the last line of a paragraph is also justified, you might add a pseudo-element */
+.section-content:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+section a {
+    color: rgb(255, 0, 115); /* Gold color for links */
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px; /* Space above the link for separation */
+    align-self: center; /* Center the link */
+}
+
+/* Enhance the look & feel of headings */
+.section-content h2 {
+    margin-bottom: 20px; /* Add space below the heading */
+    font-size: 2em; /* Adjust based on your preference */
+    text-align: center; /* Center-align the heading */
+}
+
+
+.section-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100px; /* Adjust based on your preference */
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0; /* Hide by default */
+    transition: opacity 0.3s ease;
+}
+
+.section-overlay.left {
+    left: 0;
+}
+
+.section-overlay.right {
+    right: 0;
+}
+
+.section-overlay:hover {
+    opacity: 1; /* Show on hover */
+}
+
+/* Arrow styling */
+.arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 10px; /* Adjust size */
+}
+
+.left .arrow {
+    transform: rotate(135deg); /* Left arrow */
+    -webkit-transform: rotate(135deg);
+}
+
+.right .arrow {
+    transform: rotate(-45deg); /* Right arrow */
+    -webkit-transform: rotate(-45deg);
+}
+
+
+
+/* Buttons styling */
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px; /* Space above the buttons */
+    background-color: #d10056;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .container, nav ul li {
+        width: 100%;
+    }
+
+    section {
+        min-height: 80vh;
+        padding: 20px;
+    }
+
+    button {
+        padding: 15px;
+        margin-top: 10px;
+    }
+}
+
+
+
+
+
+/* ROSE */
+
+
+section#rose {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+iframe {
+    width: 100%; /* Make the iframe take the full width of its container */
+    height: 100vh; /* Full viewport height */
+    border: none; /* Remove the border for a cleaner look */
+    padding: 0;
+    margin: 0;
+    display: block; /* Ensure iframe takes its own line */
+    border-radius: 0; /* Optional: Adjust if you want rounded corners */
+}
+
+@media (max-width: 768px) {
+    iframe {
+        height: 100vh; /* Adjust the height for smaller devices */
+        padding: 20px;
+    }
+}
+
+
+
+
+
+
+
+
